@@ -1,7 +1,7 @@
 
 name: Build loader
 
-on:
+on: workflow_dispatch
 #  repository_dispatch:
 #  workflow_dispatch:
 #    inputs:
@@ -10,8 +10,8 @@ on:
 #        required: false
 #        default: 'false'
 
-  watch:
-    types: started
+#  watch:
+#    types: started
 
 env:
   TZ: Asia/Shanghai
