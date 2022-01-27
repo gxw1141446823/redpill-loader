@@ -62,18 +62,18 @@ jobs:
         echo 'step 3'
         mkdir -p redpill-load/ext/rp-lkm
         cp redpill-lkm/redpill.ko redpill-load/ext/rp-lkm/redpill-linux-v4.4.180+.ko
-        cd redpill-load
-        
-        echo '{' > user_config.json
-        echo '  "extra_cmdline": {' >> user_config.json
-        echo '    "vid": "0x46f4",' >> user_config.json
-        echo '    "pid": "0x0001",' >> user_config.json
-        echo '    "sn": "D3ZZZZZZZZZZZ",' >> user_config.json
-        echo '    "mac1": "021132aabbcc"' >> user_config.json
-        echo '  }' >> user_config.json
-        echo '}' >> user_config.json
+
+#        echo '{' > user_config.json
+#        echo '  "extra_cmdline": {' >> user_config.json
+#        echo '    "vid": "0x46f4",' >> user_config.json
+#        echo '    "pid": "0x0001",' >> user_config.json
+#        echo '    "sn": "D3ZZZZZZZZZZZ",' >> user_config.json
+#        echo '    "mac1": "021132aabbcc"' >> user_config.json
+#        echo '  }' >> user_config.json
+#        echo '}' >> user_config.json
 
         echo 'step 4'
+        cd redpill-load
         sudo ./build-loader.sh 'DS918+' '7.0.1-42218'
         ls -l images
         mv images/redpill-DS918+*.img images/redpill-DS918+.img
