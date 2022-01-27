@@ -2,13 +2,13 @@
 name: Build loader
 
 on:
-  repository_dispatch:
-  workflow_dispatch:
-    inputs:
-      ssh:
-        description: 'SSH connection to Actions'
-        required: false
-        default: 'false'
+#  repository_dispatch:
+#  workflow_dispatch:
+#    inputs:
+#      ssh:
+#        description: 'SSH connection to Actions'
+#        required: false
+#        default: 'false'
 
   watch:
     types: started
