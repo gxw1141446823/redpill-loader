@@ -68,7 +68,7 @@ jobs:
          echo '    "vid": "0x1666",' >> user_config.json
          echo '    "pid": "0x0951",' >> user_config.json
 #        echo '    "sn": "D3ZZZZZZZZZZZ",' >> user_config.json
-#        echo '    "mac1": "021132aabbcc"' >> user_config.json
+         echo '    "mac1": "021132aabbcc"' >> user_config.json
 #        echo '  }' >> user_config.json
 #        echo '}' >> user_config.json
 
