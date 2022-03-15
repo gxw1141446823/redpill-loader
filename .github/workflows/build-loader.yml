@@ -41,7 +41,6 @@ jobs:
         git clone --depth 1 -b develop https://github.com/jumkey/redpill-load.git redpill-load
         git clone --depth 1 -b master https://github.com/RedPill-TTG/redpill-lkm.git
         git clone --depth 1 -b DSM7.0 https://github.com/SynologyOpenSource/pkgscripts-ng.git
-
     - name: Compile the firmware
       id: compile
       working-directory: /workdir
